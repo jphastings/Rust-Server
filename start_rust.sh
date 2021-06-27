@@ -9,6 +9,7 @@ if [ "$PUBLIC" = "1" ]; then
 upnp-delete-port "$PORTFORWARD_WEB"
 upnp-delete-port "$PORTFORWARD_RUST"
 upnp-delete-port "$PORTFORWARD_RCON"
+upnp-delete-port "$PORTFORWARD_RUSTPLUS"
 sleep 3
 echo ""
 echo ""
@@ -149,6 +150,7 @@ echo "Starting Port Forwarding....."
 upnp-add-port "$PORTFORWARD_WEB"
 upnp-add-port "$PORTFORWARD_RUST"
 upnp-add-port "$PORTFORWARD_RCON"
+upnp-add-port "$PORTFORWARD_RUSTPLUS"
 sleep 3
 echo "Port forwarding has opened ports"
 sleep 2
@@ -491,6 +493,7 @@ if [ "$PUBLIC" = "1" ]; then
 upnp-delete-port "$PORTFORWARD_WEB"
 upnp-delete-port "$PORTFORWARD_RUST"
 upnp-delete-port "$PORTFORWARD_RCON"
+upnp-delete-port "$PORTFORWARD_RUSTPLUS"
 sleep 3
 echo ""
 echo ""
